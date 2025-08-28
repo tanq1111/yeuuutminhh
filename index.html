@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<title>Love tminhh^^</title>
+<style>
+  body {
+    background-color: #ffd9e6;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    margin: 0; padding: 30px 0;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  h1 {
+    color: #ff4d88;
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+  .animal {
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    width: 180px;
+    user-select: none;
+    background: white;
+  }
+  .animal img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+  }
+  .label-top {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff4d88;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+  }
+  .label-bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+    text-shadow: 1px 1px 3px white;
+    pointer-events: none;
+    user-select: none;
+  }
+  #animalNo .label-bottom {
+    color: blue !important;
+  }
+  #yesText {
+    font-size: 24px;
+    color: #d63384;
+    margin-top: 20px;
+    font-weight: bold;
+    display: none;
+  }
+  #footerText {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #ff4d88;
+    font-weight: bold;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Em có thích tui không🥺❤️</h1>
+
+  <div class="buttons-container">
+    <div class="animal" id="animalYes">
+      <div class="label-top">chó cute</div>
+      <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=180&q=80" alt="chó cute" />
+      <div class="label-bottom">Có</div>
+    </div>
+
+    <div class="animal" id="animalNo">
+      <div class="label-top">mèo dễ thương</div>
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=180&q=80" alt="mèo dễ thương" />
+      <div class="label-bottom">Không</div>
+    </div>
+  </div>
+
+  <div id="yesText">Hẹ hẹ, tuiii cũng thích em nhiều lắm áaaaaa 😘❤️</div>
+
+  <div id="footerText">iuuuu Tminhhh😘❤️</div>
+
+<script>
+  const animalYes = document.getElementById('animalYes');
+  const animalNo = document.getElementById('animalNo');
+  const yesText = document.getElementById('yesText');
+
+  animalYes.addEventListener('click', () => {
+    yesText.style.display = 'block';
+  });
+
+  animalNo.addEventListener('click', () => {
+    alert("Huhu, em không thích tui hả, chọn có ik mà 😢");
+  });
+</script>
+
+</body>
+</html>
